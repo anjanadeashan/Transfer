@@ -47,8 +47,6 @@ def delete_file(filename):
         return jsonify({'success': True})
     return jsonify({'success': False}), 404
 
-if __name__ == '__main__':
-    app.run(debug=True, port=5001)
 
 if __name__ == "__main__":
     from waitress import serve
